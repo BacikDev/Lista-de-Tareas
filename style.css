@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:wght@300;500;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: #fafafb;
+    --purple: #9a67ea;
+    --blue-light: #04d4c3;
+    --blue-dark: #2a73c2;
+    --green: #2c7b90;
+}
+
+body{
+    background: linear-gradient(to bottom, var(--purple), var(--blue-light));
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+}
+
+.container{
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 40%;
+    background: rgba(255,255, 255, .3);
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.foto-perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    max-width: 100px;
+    margin: 0 auto;
+   transition: .3s;
+}
+.foto-perfil:hover{
+    transform: scale(1.1);
+}
+
+.foto-perfil img{
+    max-width: 100px;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#fecha{
+    padding: 5px 0;
+}
+
+.perfil span{
+    letter-spacing: 1px;
+}
+
+.agregar-tarea{
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(2px);
+    border-radius: 15px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 70px;
+    margin: 40px 0;
+}
+
+.agregar-tarea input{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    background: none;
+}
+
+.agregar-tarea i{
+    font-size: 50px;
+    color: var(--white);
+    transition: .3s;
+}
+
+.agregar-tarea i:hover{
+    transform: scale(1.1);
+    color: #884fd3;
+    cursor: pointer;
+}
+
+.agregar-tarea input::placeholder{
+    font-size: 1.1rem;
+    color: var(--purple);
+}
+
+.seccion-tarea h3{
+    display: flex;
+    justify-content: center;
+    padding: 1px 5px;
+    margin-bottom: 20px;
+}
+
+.seccion-tarea li{
+    display: flex;
+    background: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(2px);
+    border-radius: 15px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.seccion-tarea i{
+    font-size: 25px;
+    transition: .3s;
+}
+
+.seccion-tarea i:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #ed61ff;
+}
+
+.line-through{
+    text-decoration: line-through;
+    color: rgba(255, 255, 255, 0.6);
+}
